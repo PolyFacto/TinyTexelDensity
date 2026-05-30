@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://gkpp6tuwnc4q"]
 
+[ext_resource type="Texture2D" uid="uid://bmq0q4gpm72ig" path="res://addons/tiny_texel_density/texture/texel_density_512_px_m.jpg" id="2_nhkmp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nhkmp"]
+albedo_color = Color(0.47646266, 0.7698093, 0.99999994, 1)
+albedo_texture = ExtResource("2_nhkmp")
+uv1_triplanar = true
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_1q47j"]
+material = SubResource("StandardMaterial3D_nhkmp")
 size = Vector2(10, 10)
 
 [node name="Prototype" type="Node" unique_id=1989342179]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2019669164]
+[node name="FloorMesh" type="MeshInstance3D" parent="." unique_id=2019669164]
 mesh = SubResource("PlaneMesh_1q47j")
