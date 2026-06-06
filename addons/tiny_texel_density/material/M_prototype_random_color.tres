@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bulh446mjqct8"]
+
+[ext_resource type="Shader" uid="uid://c2ln6ga4seww2" path="res://addons/tiny_texel_density/shader/prototype_random_color.gdshader" id="1_d1p1w"]
+[ext_resource type="Texture2D" uid="uid://c3flynbi1gqsm" path="res://addons/tiny_texel_density/texture/texel_density_1024_px_m.jpg" id="2_ot8cm"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_d1p1w")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic = 0.0
+shader_parameter/texture_albedo = ExtResource("2_ot8cm")
+shader_parameter/use_triplanar = true
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/tint_strength = 1.0
